@@ -1,0 +1,178 @@
+{% extends "lure/layout.html" %}
+{% load static %}
+{% block content  %}
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="" title="Distribuidora Luresa">
+          <img src="{% static 'img/dl.ico' %}" class="navbar-logo-img">
+        </a>
+      </div>
+      <style>
+        .active:hover {
+            text-decoration: underline !important;
+            color: darkblue !important;
+        }
+      </style>
+      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'inicio' %}" title="" class="active">Inicio</a></li>
+          <li><a href="{% url 'nosotros' %}" title="" class="active">Nosotros</a></li>
+          <li><a href="{% url 'productos' %}" title="" class="active">Productos</a></li>
+          <li><a href="{% url 'contacto' %}" title="" class="active">Contacto</a></li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="white-text-container background-image-container" style="background-image: url('static/img/imagen5.jpg')">
+    <div class="opacity"></div>
+    <div class="container">
+        <div class="row">           
+            <div class="col-md-6">
+                <h1>Promocion</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui accumsan sit. Ipsum dolor sit
+                    amet consectetur adipiscing elit. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-container border-section-container">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-container-spacer">
+                    <div class="text-center">
+                        <h2>Lema de la Distribuidora</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque earum vitae omnis perferendis aliquam error suscipit dolorem fuga eligendi velit, cum saepe, illum, enim excepturi ut molestiae maiores atque hic!</p>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h2>Vision</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, neque? Quia nobis perspiciatis mollitia maxime libero suscipit rem, nisi earum incidunt aperiam voluptatum quis quo a ratione corrupti, quas consequatur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h2>Meta</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nulla dignissimos eos alias, eligendi tempora adipisci et eveniet incidunt nihil quidem, rerum dolorum quod debitis commodi obcaecati odit sed aperiam?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h2>Mision</h2>
+                    </div>
+                    <div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quas laborum dolor, vitae esse a iure officia explicabo similique, velit perferendis magnam earum dolorem quidem id debitis placeat. Velit, reprehenderit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">                        
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="img-responsive" src="{% static 'img/imagen1.jpg' %}" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="{% static 'img/imagen2.jpeg' %}" alt="Second slide">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="{% static 'img/images.jpg' %}" alt="Third slide">
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<div class="section-container background-color-container white-text-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h2>Distribuimos Nuestros Productos</h2>
+                    <span><img src="{% static 'img/virgin.webp' %}" width="7%"></span>
+                    <span><img src="{% static 'img/virgin.webp' %}" width="7%"></span>
+                    <span><img src="{% static 'img/virgin.webp' %}" width="7%"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+ </div>
+<footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <h4>Ubicacion</h4>
+                        <p><b>Nos ubicamos en</b><br>Jr. Asamblea N° 346<br><b>Al frente del</b><br>Colegio Luiz Carranza</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Siguenos en las Redes Sociales</h4>
+                        <p>
+                            <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </p>  
+                    </div>
+                    <div class="col-md-4">
+                        <p><img src="assets/img/dl.ico" width="45%" style="border-radius: 90px;"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .copy {
+            background: #313131 !important;
+            color: #C2C2C2 !important;
+            width: 100%;
+            height: 4vh;
+            padding: 4px;
+            text-align: center;
+        }
+    </style>
+    <div class="copy">
+        <p>Copyright © 2022 Distribuidora Luresa</p>
+    </div>
+</footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+  });
+</script>
+{% endblock %}

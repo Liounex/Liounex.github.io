@@ -1,0 +1,113 @@
+{% extends "lure/layout.html" %}
+{% load static %}
+{% block content  %}
+<header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'inicio' %}" title="Distribuidora Luresa">
+            <img src="{% static 'img/dl.ico' %}" class="navbar-logo-img" alt="">
+          </a>
+        </div>
+        <style>
+          .active:hover {
+              text-decoration: underline !important;
+              color: darkblue !important;
+          }
+        </style>
+        <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'inicio' %}" title="" class="active">Inicio</a></li>
+            <li><a href="{% url 'nosotros' %}" title="" class="active"> Nosotros</a></li>
+            <li><a href="{% url 'productos' %}" title="" class="active">Productos</a></li>
+            <li><a href="{% url 'contacto' %}" title="" class="active">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12">
+                 <img class="img-responsive" src="{% static 'img/img-01.jpg' %}">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="section-container">
+      <div class="container">
+          <div class="row">
+                 <div class="col-xs-12 col-md-8 col-md-offset-2">
+                      <div class="text-center">
+                      <h1>Somos</h1>
+                       </div>   
+                          <p class="section-container-spacer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut laboriosam consequuntur fugiat ullam a dolores iure autem quis voluptas repellat placeat nisi eaque temporibus, unde eum culpa laborum molestias doloribus.
+                          </p>
+                      <div class="row section-container-spacer">
+                          <div class="col-md-6">
+                              <img class="img-responsive" src="{% static 'img/img-03.jpg' %}">
+                          </div>
+                          <div class="col-md-6">
+                              <img class="img-responsive" src="{% static 'img/img-02.jpg' %}">
+                          </div>
+                      </div>
+                 </div>
+                 <div class="col-xs-12 col-md-8 col-md-offset-2">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis illum officia reiciendis architecto adipisci inventore laboriosam. Omnis sed a fugiat, amet harum nesciunt assumenda at aspernatur veniam illum possimus? Expedita?</p>
+                 </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <h4>Nosotros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, sunt. Excepturi tempora aliquid similique voluptatibus hic omnis illum quo nihil sapiente temporibus fuga vero facere placeat, eum quidem voluptas totam?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Siguenos en las Redes Sociales</h4>
+                        <p>
+                            <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </p>  
+                    </div>
+                    <div class="col-md-4">
+                      <p><img src="{% static 'img/dl.ico' %}" width="45%" style="border-radius: 90px;"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <style>
+      .copy {
+          background: #313131 !important;
+          color: #C2C2C2 !important;
+          width: 100%;
+          height: 4vh;
+          padding: 4px;
+          text-align: center;
+      }
+    </style>
+    <div class="copy">
+      <p>Copyright © 2022 Distribuidora Luresa</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+{% endblock %}

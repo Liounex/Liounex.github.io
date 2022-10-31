@@ -1,0 +1,138 @@
+{% extends "lure/layout.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content  %}
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'inicio' %}" title="">
+          <img src="{% static 'img/dl.ico' %}" class="navbar-logo-img" alt="">
+        </a>
+      </div>
+      <style>
+        .active:hover {
+            text-decoration: underline !important;
+            color: darkblue !important;
+        }
+      </style>
+      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'inicio' %}" title="" class="active">Inicio</a></li>
+            <li><a href="{% url 'nosotros' %}" title="" class="active">Nosotros</a></li>
+            <li><a href="{% url 'productos' %}" title="" class="active">Productos</a></li>
+            <li><a href="{% url 'contacto' %}" title="" class="active">Contacto</a></li>         
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<style>
+  .borde {
+    border: 1px solid rgb(99, 99, 99);
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 1px rgba(99, 99, 99, 0.3);
+  }
+</style>
+<div class="section-container no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d485.63574672019564!2d-74.22441376467367!3d-13.156976780840496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1666824650090!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="row">                
+                  <div class="col-md-6">
+                    <div class="borde">
+                      <form action="" class="reveal-content contact-form" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                          <p>{{ contact_form.name.label }}</p>
+                          {% render_field contact_form.name class+="form-control" %}
+                          {{ contact_form.name.errors }}
+                          <!--<input type="name" class="form-control" id="name" placeholder="Nombre Completo" name="txtnom" required> -->
+                        </div>
+                        <div class="form-group">
+                          <p>{{ contact_form.email.label}}</p>
+                          {% render_field contact_form.email class+="form-control" %}
+                          {{ contact_form.email.errors }}
+                          <!--<input type="email" class="form-control" id="email" placeholder="Correo Electronico" name="txtcorreo" required> -->
+                        </div>
+                        <div class="form-group">
+                          <p>{{ contact_form.message.label }}</p>
+                          {% render_field contact_form.message class+="form-control" %}
+                          {{ contact_form.message.errors }}
+                          <!--<textarea class="form-control" rows="3" placeholder="Ingrese su Mensaje" name="txtmensaje"></textarea required> -->
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                      </form>
+                </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                  <h3><b>Ubicacion</b></h3>
+                  <div>
+                    <p>Jr. Asamblea N° 346<br/><b>Referencia:</b> <br/>Frente al Colegio Luiz Carranza</p>
+                  </div>
+                  <div>
+                    <p><b>Contacto:</b><br/>distribuidoraluresa@hotmail.com<br>+51 976 932 626</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+  <div class="section-container footer-container">
+      <div class="container">
+          <div class="row">
+                  <div class="col-md-4">
+                      <h4>Nosotros</h4>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, sunt. Excepturi tempora aliquid similique voluptatibus hic omnis illum quo nihil sapiente temporibus fuga vero facere placeat, eum quidem voluptas totam?</p>
+                  </div>
+                  <div class="col-md-4">
+                      <h4>Siguenos en las Redes Sociales</h4>
+                      <p>
+                          <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="facebook">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="twitter">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </p>  
+                  </div>
+                  <div class="col-md-4">
+                    <p><img src="{% static 'img/dl.ico' %}" width="45%" style="border-radius: 90px;"></p>
+                  </div>
+          </div>
+      </div>
+  </div>
+  <style>
+      .copy {
+          background: #313131 !important;
+          color: #C2C2C2 !important;
+          width: 100%;
+          height: 4vh;
+          padding: 4px;
+          text-align: center;
+      }
+  </style>
+  <div class="copy">
+      <p>Copyright © 2022 Distribuidora Luresa</p>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+  });
+</script>
+{% endblock %}

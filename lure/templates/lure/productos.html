@@ -1,0 +1,505 @@
+{% extends "lure/layout.html" %}
+{% load static %}
+{% block content  %}
+<header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html" title="">
+            <img src="{% static 'img/dl.ico' %}" class="navbar-logo-img" alt="">
+          </a>
+        </div>
+        <style>
+          .active:hover {
+              text-decoration: underline !important;
+              color: darkblue !important;
+          }
+        </style>
+        <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'inicio' %}" title="" class="active">Inicio</a></li>
+            <li><a href="{% url 'nosotros' %}" title="" class="active">Nosotros</a></li>
+            <li><a href="{% url 'productos' %}" title="" class="active">Productos</a></li>
+            <li><a href="{% url 'contacto' %}" title="" class="active">Contacto</a></li>          
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section-container background-color-container white-text-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h3>Productos Disponibles</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+  <div class="section-container">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="pricing-card pricing-primary">
+                    <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+                  </div>
+                  <div class="pricing-features">
+                      <ul class="features">
+                        <h3 style="text-align: center;">Nombre Producto</h3>
+                        <h5>Detalles:</h5>
+                        <li>Detalle de producto 1</li>
+                        <li>Detalle de producto 2</li>
+                        <li>Detalle de producto 3</li>
+                      </ul>
+                      <a href="" class="btn btn-primary" title="">$100.00</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="pricing-card pricing-info">
+                    <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+                  </div>
+                  <div class="pricing-features">
+                      <ul class="features">
+                        <h3 style="text-align: center;">Nombre Producto</h3>
+                        <h5>Detalles:</h5>
+                        <li>Detalle de producto 1</li>
+                        <li>Detalle de producto 2</li>
+                        <li>Detalle de producto 3</li>
+                      </ul>
+                      <a href="" class="btn btn-primary" title="">$100.00</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="pricing-card pricing-info">
+                  <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+                </div>
+                <div class="pricing-features">
+                    <ul class="features">
+                      <h3 style="text-align: center;">Nombre Producto</h3>
+                      <h5>Detalles:</h5>
+                      <li>Detalle de producto 1</li>
+                      <li>Detalle de producto 2</li>
+                      <li>Detalle de producto 3</li>
+                    </ul>
+                    <a href="" class="btn btn-primary" title="">$100.00</a>
+                </div>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+                <div class="pricing-card pricing-primary">
+                  <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+                </div>
+                <div class="pricing-features">
+                    <ul class="features">
+                      <h3 style="text-align: center;">Nombre Producto</h3>
+                      <h5>Detalles:</h5>
+                      <li>Detalle de producto 1</li>
+                      <li>Detalle de producto 2</li>
+                      <li>Detalle de producto 3</li>
+                    </ul>
+                    <a href="" class="btn btn-primary" title="">$100.00</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card pricing-info">
+                  <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+                </div>
+                <div class="pricing-features">
+                    <ul class="features">
+                      <h3 style="text-align: center;">Nombre Producto</h3>
+                      <h5>Detalles:</h5>
+                      <li>Detalle de producto 1</li>
+                      <li>Detalle de producto 2</li>
+                      <li>Detalle de producto 3</li>
+                    </ul>
+                    <a href="" class="btn btn-primary" title="">$100.00</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="pricing-card pricing-info">
+                <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+              </div>
+              <div class="pricing-features">
+                  <ul class="features">
+                    <h3 style="text-align: center;">Nombre Producto</h3>
+                    <h5>Detalles:</h5>
+                    <li>Detalle de producto 1</li>
+                    <li>Detalle de producto 2</li>
+                    <li>Detalle de producto 3</li>
+                  </ul>
+                  <a href="" class="btn btn-primary" title="">$100.00</a>
+              </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+              <div class="pricing-card pricing-primary">
+                <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+              </div>
+              <div class="pricing-features">
+                  <ul class="features">
+                    <h3 style="text-align: center;">Nombre Producto</h3>
+                    <h5>Detalles:</h5>
+                    <li>Detalle de producto 1</li>
+                    <li>Detalle de producto 2</li>
+                    <li>Detalle de producto 3</li>
+                  </ul>
+                  <a href="" class="btn btn-primary" title="">$100.00</a>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="pricing-card pricing-info">
+                <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+              </div>
+              <div class="pricing-features">
+                  <ul class="features">
+                    <h3 style="text-align: center;">Nombre Producto</h3>
+                    <h5>Detalles:</h5>
+                    <li>Detalle de producto 1</li>
+                    <li>Detalle de producto 2</li>
+                    <li>Detalle de producto 3</li>
+                  </ul>
+                  <a href="" class="btn btn-primary" title="">$100.00</a>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pricing-card pricing-info">
+              <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+            </div>
+            <div class="pricing-features">
+                <ul class="features">
+                  <h3 style="text-align: center;">Nombre Producto</h3>
+                  <h5>Detalles:</h5>
+                  <li>Detalle de producto 1</li>
+                  <li>Detalle de producto 2</li>
+                  <li>Detalle de producto 3</li>
+                </ul>
+                <a href="" class="btn btn-primary" title="">$100.00</a>
+            </div>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="pricing-card pricing-primary">
+              <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+            </div>
+            <div class="pricing-features">
+                <ul class="features">
+                  <h3 style="text-align: center;">Nombre Producto</h3>
+                  <h5>Detalles:</h5>
+                  <li>Detalle de producto 1</li>
+                  <li>Detalle de producto 2</li>
+                  <li>Detalle de producto 3</li>
+                </ul>
+                <a href="" class="btn btn-primary" title="">$100.00</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="pricing-card pricing-info">
+              <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+            </div>
+            <div class="pricing-features">
+                <ul class="features">
+                  <h3 style="text-align: center;">Nombre Producto</h3>
+                  <h5>Detalles:</h5>
+                  <li>Detalle de producto 1</li>
+                  <li>Detalle de producto 2</li>
+                  <li>Detalle de producto 3</li>
+                </ul>
+                <a href="" class="btn btn-primary" title="">$100.00</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card pricing-info">
+            <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+          </div>
+          <div class="pricing-features">
+              <ul class="features">
+                <h3 style="text-align: center;">Nombre Producto</h3>
+                <h5>Detalles:</h5>
+                <li>Detalle de producto 1</li>
+                <li>Detalle de producto 2</li>
+                <li>Detalle de producto 3</li>
+              </ul>
+              <a href="" class="btn btn-primary" title="">$100.00</a>
+          </div>
+        </div>
+    </div>
+      </div>
+  </div>
+  <div class="section-container background-color-container white-text-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h3>Ofertas Disponibles</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="pricing-card pricing-primary">
+                <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+              </div>
+              <div class="pricing-features">
+                  <ul class="features">
+                    <h3 style="text-align: center;">Nombre Producto</h3>
+                    <h5>Detalles:</h5>
+                    <li>Detalle de producto 1</li>
+                    <li>Detalle de producto 2</li>
+                    <li>Detalle de producto 3</li>
+                  </ul>
+                  <a href="" class="btn btn-primary" title="">$100.00</a>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="pricing-card pricing-info">
+                <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+              </div>
+              <div class="pricing-features">
+                  <ul class="features">
+                    <h3 style="text-align: center;">Nombre Producto</h3>
+                    <h5>Detalles:</h5>
+                    <li>Detalle de producto 1</li>
+                    <li>Detalle de producto 2</li>
+                    <li>Detalle de producto 3</li>
+                  </ul>
+                  <a href="" class="btn btn-primary" title="">$100.00</a>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pricing-card pricing-info">
+              <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+            </div>
+            <div class="pricing-features">
+                <ul class="features">
+                  <h3 style="text-align: center;">Nombre Producto</h3>
+                  <h5>Detalles:</h5>
+                  <li>Detalle de producto 1</li>
+                  <li>Detalle de producto 2</li>
+                  <li>Detalle de producto 3</li>
+                </ul>
+                <a href="" class="btn btn-primary" title="">$100.00</a>
+            </div>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="pricing-card pricing-primary">
+              <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+            </div>
+            <div class="pricing-features">
+                <ul class="features">
+                  <h3 style="text-align: center;">Nombre Producto</h3>
+                  <h5>Detalles:</h5>
+                  <li>Detalle de producto 1</li>
+                  <li>Detalle de producto 2</li>
+                  <li>Detalle de producto 3</li>
+                </ul>
+                <a href="" class="btn btn-primary" title="">$100.00</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="pricing-card pricing-info">
+              <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+            </div>
+            <div class="pricing-features">
+                <ul class="features">
+                  <h3 style="text-align: center;">Nombre Producto</h3>
+                  <h5>Detalles:</h5>
+                  <li>Detalle de producto 1</li>
+                  <li>Detalle de producto 2</li>
+                  <li>Detalle de producto 3</li>
+                </ul>
+                <a href="" class="btn btn-primary" title="">$100.00</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card pricing-info">
+            <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+          </div>
+          <div class="pricing-features">
+              <ul class="features">
+                <h3 style="text-align: center;">Nombre Producto</h3>
+                <h5>Detalles:</h5>
+                <li>Detalle de producto 1</li>
+                <li>Detalle de producto 2</li>
+                <li>Detalle de producto 3</li>
+              </ul>
+              <a href="" class="btn btn-primary" title="">$100.00</a>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+          <div class="pricing-card pricing-primary">
+            <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+          </div>
+          <div class="pricing-features">
+              <ul class="features">
+                <h3 style="text-align: center;">Nombre Producto</h3>
+                <h5>Detalles:</h5>
+                <li>Detalle de producto 1</li>
+                <li>Detalle de producto 2</li>
+                <li>Detalle de producto 3</li>
+              </ul>
+              <a href="" class="btn btn-primary" title="">$100.00</a>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="pricing-card pricing-info">
+            <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+          </div>
+          <div class="pricing-features">
+              <ul class="features">
+                <h3 style="text-align: center;">Nombre Producto</h3>
+                <h5>Detalles:</h5>
+                <li>Detalle de producto 1</li>
+                <li>Detalle de producto 2</li>
+                <li>Detalle de producto 3</li>
+              </ul>
+              <a href="" class="btn btn-primary" title="">$100.00</a>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-card pricing-info">
+          <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+        </div>
+        <div class="pricing-features">
+            <ul class="features">
+              <h3 style="text-align: center;">Nombre Producto</h3>
+              <h5>Detalles:</h5>
+              <li>Detalle de producto 1</li>
+              <li>Detalle de producto 2</li>
+              <li>Detalle de producto 3</li>
+            </ul>
+            <a href="" class="btn btn-primary" title="">$100.00</a>
+        </div>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+        <div class="pricing-card pricing-primary">
+          <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+        </div>
+        <div class="pricing-features">
+            <ul class="features">
+              <h3 style="text-align: center;">Nombre Producto</h3>
+              <h5>Detalles:</h5>
+              <li>Detalle de producto 1</li>
+              <li>Detalle de producto 2</li>
+              <li>Detalle de producto 3</li>
+            </ul>
+            <a href="" class="btn btn-primary" title="">$100.00</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="pricing-card pricing-info">
+          <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+        </div>
+        <div class="pricing-features">
+            <ul class="features">
+              <h3 style="text-align: center;">Nombre Producto</h3>
+              <h5>Detalles:</h5>
+              <li>Detalle de producto 1</li>
+              <li>Detalle de producto 2</li>
+              <li>Detalle de producto 3</li>
+            </ul>
+            <a href="" class="btn btn-primary" title="">$100.00</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pricing-card pricing-info">
+        <img src="{% static 'img/p1.png' %}" alt="" width="100%">
+      </div>
+      <div class="pricing-features">
+          <ul class="features">
+            <h3 style="text-align: center;">Nombre Producto</h3>
+            <h5>Detalles:</h5>
+            <li>Detalle de producto 1</li>
+            <li>Detalle de producto 2</li>
+            <li>Detalle de producto 3</li>
+          </ul>
+          <a href="" class="btn btn-primary" title="">$100.00</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="section-container background-color-container white-text-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h2>Nuestros Patrocinadores</h2>
+                    <span><img src="{% static 'img/virgin.webp' %}" width="7%"></span>
+                    <span><img src="{% static 'img/virgin.webp' %}" width="7%"></span>
+                    <span><img src="{% static 'img/virgin.webp' %}" width="7%"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+  <footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                      <h4>Ubicacion</h4>
+                      <p><b>Nos ubicamos en</b><br>Jr. Asamblea N° 346<br><b>Al frente del</b><br>Colegio Luiz Carranza</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Siguenos en las Redes Sociales</h4>
+                        <p>
+                            <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </p>  
+                    </div>
+                    <div class="col-md-4">
+                      <p><img src="{% static 'img/dl.ico' %}" width="45%" style="border-radius: 90px;"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .copy {
+            background: #313131 !important;
+            color: #C2C2C2 !important;
+            width: 100%;
+            height: 4vh;
+            padding: 4px;
+            text-align: center;
+        }
+    </style>
+    <div class="copy">
+        <p>Copyright © 2022 Distribuidora Luresa</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+{% endblock %}

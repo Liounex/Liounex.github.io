@@ -1,0 +1,93 @@
+{% extends "lure/layout.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content  %}
+<header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'inicio' %}" title="">
+            <img src="{% static 'img/dl.ico' %}" class="navbar-logo-img" alt="">
+          </a>
+        </div>
+        <style>
+          .active:hover {
+              text-decoration: underline !important;
+              color: darkblue !important;
+          }
+        </style>
+        <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'inicio' %}" title="" class="active">Inicio</a></li>
+              <li><a href="{% url 'nosotros' %}" title="" class="active">Nosotros</a></li>
+              <li><a href="{% url 'productos' %}" title="" class="active">Productos</a></li>
+              <li><a href="{% url 'contacto' %}" title="" class="active">Contacto</a></li>         
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section-container border-section-container" style="height: 59.8vh;">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-container-spacer">
+                    <div class="text-center">
+                        <h1>Ocurrio un Error Inesperado</h1>
+                        <h3>Ocurrio un Problema con el servidor o su conexion<br>
+                        favor de intentarlo mas tarde</h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+  <footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <h4>Nosotros</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, sunt. Excepturi tempora aliquid similique voluptatibus hic omnis illum quo nihil sapiente temporibus fuga vero facere placeat, eum quidem voluptas totam?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Siguenos en las Redes Sociales</h4>
+                        <p>
+                            <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </p>  
+                    </div>
+                    <div class="col-md-4">
+                      <p><img src="{% static 'img/dl.ico' %}" width="45%" style="border-radius: 90px;"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .copy {
+            background: #313131 !important;
+            color: #C2C2C2 !important;
+            width: 100%;
+            height: 4vh;
+            padding: 4px;
+            text-align: center;
+        }
+    </style>
+    <div class="copy">
+        <p>Copyright © 2022 Distribuidora Luresa</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+{% endblock %}
